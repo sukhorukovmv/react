@@ -23,7 +23,7 @@ export default function CarouselBox() {
                         className="d-block w-100"
                         src={commis1}
                         alt="commision shop"
-                    />
+                   />
                     <Carousel.Caption>
                         <h3> Commision magazine </h3>
                         <p> amazing commision magazine </p>

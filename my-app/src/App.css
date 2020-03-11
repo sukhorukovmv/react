@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -53,3 +53,28 @@
 .footer {
   grid-column: span 12;
 }
+
+* { 
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-family: proxima, Arial, sans-serif;
+    font-size: 16px;
+    color: black; 
+    overflow-wrap: break-word; 
+}
+
+.container { 
+    max-width: 100%; 
+    min-width: 320px;
+}
+
+.wrap {
+    max-width: 1500px;
+    min-width: 290px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+*/

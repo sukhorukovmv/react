@@ -1,14 +1,16 @@
 import React from 'react';
-import Header from './components/Header'
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header/Header'
+//import './App.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
+import "./App.css"
 
-function App() {
+export default function App(props) {
   return (
-    <div>
-      <Header />
-    </div>
+    <BrowserRouter>
+      <div className="container">
+        <Header />
+      </div>
+    </BrowserRouter>
   );
 }
-
-export default App;

@@ -1,4 +1,9 @@
-import React from 'react';
+import React from "react";
+import logo from "./img/logoKom.jpg";
+import arrow2 from "./img/arrow2.png";
+import { NavLink } from "react-router-dom";
+import "./Header.style.css"
+/*
 import { Navbar, Nav, Container, FormControl, Form, Button } from 'react-bootstrap';
 import logo from './logo192.png'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -52,3 +57,44 @@ const Header = () => {
 }
 
 export default Header;
+*/
+
+export default function Header() {
+    return (
+        <header className="header">
+            <div className="header__wrap wrap">
+                <div className="header__top">
+                    <div className="header__logo logo">
+                        <a className="logo__link" href="#">
+                            <img className="logo__img" src={logo} alt="Логотип"></img>
+                        </a>
+                    </div>
+                    <nav className="header__menu menu">
+                        <div className="menu__list">
+                            <div className="menu__item">
+                                <NavLink to="/registration">Регистрация</NavLink>
+                            </div>
+                            <div className="menu__item">
+                                <NavLink to="/access" >Вход</NavLink>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div className="header__info">
+                    <h1 className="header__title">
+                        Комиссионный магазин
+                    </h1>
+                    <p className="header__text">
+                        <a className="header__link" href="#">Спеши купить</a>
+                    </p>
+                </div>
+{
+ //               <a className="header__btn" href="#content">
+ //                   <img className="header__arrow" srs={arrow2} alt="Перейти ниже"></img>
+ //               </a>
+}
+            </div>
+        </header>
+    )
+}

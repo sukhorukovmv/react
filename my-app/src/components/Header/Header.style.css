@@ -1,0 +1,82 @@
+.header {
+    background-color: wheat;
+/*    -webkit-background-size: cover; /определяет ширину и высоту фонового изображения */
+    background-size: cover;
+}
+
+.header__top {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 224px 1fr;
+    grid-column-gap: 20px;
+}
+
+.logo__link {
+    display: block;
+}
+
+.logo__img {
+    display: block;
+    max-width: 100%;
+}
+
+.header__title {
+    color: white;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 36px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.header__text {
+    text-align: center;
+}
+
+.header__link {
+    font-size: 30px;
+    line-height: 75px;
+    color: tomato;
+    font-weight: 800;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 12px;
+    transition-duration: 500ms;
+    transition-property: letter-spasing;
+}
+
+.header__link:hover {
+    letter-spacing: 15px;
+}
+
+.header__btn {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto; /*выровнять по центру*/
+    width: 84px; /*размер картинки*/
+    height: 42px;
+    cursor: pointer;
+}
+
+.menu__list {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.menu__item {
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 6.3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 65px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}

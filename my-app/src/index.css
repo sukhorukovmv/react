@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,29 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*/
+
+* { /*for all elements*/
+    margin: 0; /*граница между блоками*/
+    padding: 0;
+}
+
+body {
+    font-family: proxima, Arial, sans-serif;
+    font-size: 16px;
+    color: black; 
+    overflow-wrap: break-word; /* перенос слов на новую строку */
+}
+
+.container { /*класс контейнер или родительский класс*/
+    max-width: 100%; /*максимальная ширина*/
+    min-width: 320px;
+}
+
+.wrap {
+    max-width: 1500px;
+    min-width: 290px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
