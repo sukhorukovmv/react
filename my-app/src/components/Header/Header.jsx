@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./img/logoKom.jpg";
+import logo from "./img/logoKom.png";
 import { NavLink } from "react-router-dom";
 import "./Header.style.css"
 /*
@@ -71,6 +71,9 @@ export default function Header() {
                     <nav className="header__menu menu">
                         <div className="menu__list">
                             <div className="menu__item">
+                                <NavLink to="/dialogs" >Обратная связь</NavLink>
+                            </div>
+                            <div className="menu__item">
                                 <NavLink to="/registration">Регистрация</NavLink>
                             </div>
                             <div className="menu__item">
@@ -88,11 +91,6 @@ export default function Header() {
                         <a className="header__link" href="#">Спеши купить</a>
                     </p>
                 </div>
-{
- //               <a className="header__btn" href="#content">
- //                   <img className="header__arrow" srs={arrow2} alt="Перейти ниже"></img>
- //               </a>
-}
             </div>
         </header>
     )

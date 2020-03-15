@@ -1,5 +1,5 @@
 .header {
-    background-color: wheat;
+    background-color: grey;
 /*    -webkit-background-size: cover; /определяет ширину и высоту фонового изображения */
     background-size: cover;
 }
@@ -24,7 +24,7 @@
     color: white;
     font-size: 60px;
     line-height: 70px;
-    letter-spacing: 36px;
+    letter-spacing: 10px;
     text-align: center;
     font-weight: normal;
 }
@@ -40,13 +40,13 @@
     font-weight: 800;
     text-decoration: none;
     display: inline-block;
-    letter-spacing: 12px;
+    letter-spacing: 9px;
     transition-duration: 500ms;
     transition-property: letter-spasing;
 }
 
 .header__link:hover {
-    letter-spacing: 15px;
+    letter-spacing: 12px;
 }
 
 .header__btn {
